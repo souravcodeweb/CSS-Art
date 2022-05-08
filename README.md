@@ -8,8 +8,7 @@
 #  ✨ 3d animated Cube ✨ 
 https://user-images.githubusercontent.com/87852919/166942153-95e1a5b5-f056-491a-bcd3-033c76dfcd92.mp4
 
-# ✨ Pure Css 3D Rotating image Gallery ✨
-
+<!-- # ✨ Pure Css 3D Rotating image Gallery ✨ -->
 
 # ✨ One Div Css Art ✨
 ![myimagecssart](https://user-images.githubusercontent.com/87852919/167277236-8a4ac52a-9c98-4316-a1af-203626b5a646.PNG)
