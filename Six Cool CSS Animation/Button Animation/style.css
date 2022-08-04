@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    min-height: 100vh;
+}
+a{
+    position: relative;
+    padding: 20px 50px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 200px;
+    overflow: hidden;
+}
+a span{
+    position: relative;
+    z-index: 1;
+    font-size: 20px;
+    letter-spacing: 8px;
+    color: #fff;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+a .btn{
+    position: absolute;
+    left: 0;
+    top: -80px;
+    width: 200px;
+    height: 200px;
+    background: #2eea31;
+    box-shadow: inset 0 0 50px rgba(0,0,0,.5);
+    transition: 0.5s;
+}
+a .btn::before,
+a .btn::after{
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: #000;
+}
+a .btn::before{
+    border-radius: 45%;
+    background: rgba(20,20,20,1);
+    animation: animate 5s linear infinite;
+}
+a .btn::after{
+    border-radius: 40%;
+    background: rgb(20, 20, 20,0.5);
+    animation: animate 10s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+}

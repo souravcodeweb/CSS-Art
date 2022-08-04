@@ -1,0 +1,96 @@
+body{
+    background-color: #000;
+    margin: 0px;
+    padding: 0px;
+}
+.hero{
+    background: green;
+    height: 80px;
+    width: 100px;
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    border-radius: 100px 100px 0px 0px;
+    animation: fly 2s infinite;
+}
+.body{
+    background: #fff;
+    height: 100px;
+    width: 200px;
+    position: relative;
+    top: 80px;
+    right: 100px;
+    border-radius: 0px 0px 200px 200px;
+    -webkit-border-radius: 0px 0px 200px 200px;
+    -moz-border-radius: 0px 0px 200px 200px;
+    -ms-border-radius: 0px 0px 200px 200px;
+    -o-border-radius: 0px 0px 200px 200px;
+}
+.feather1{
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 60px solid #e8ee2e;
+    position: relative;
+    right: 140px;
+    bottom: 70px;
+    transform: rotate(-45deg);
+}
+.eye{
+    background: #fff;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 130px;
+    left: 50px;
+}
+.eyeball{
+    background: #000;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    position: relative;
+}
+.beak{
+    height: 0;
+    width: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 30px solid #fff;
+    position: relative;
+    bottom: 140px;
+    left: 100px;
+}
+@keyframes fly{
+    50%{
+        transform: translateY(50px);
+}
+}
+.feather2{
+    background: green;
+    height: 85px;
+    width: 170px;
+    border-radius: 0px 0px 170px 170px;
+    bottom: 140px;
+    position: relative;
+    right: 120px;
+    animation: flap 1s infinite;
+    transform-origin: right;
+}
+@keyframes flap{
+    50%{
+        transform: rotate(20deg);
+    }
+}
+.inner{
+    background: #ccc;
+    height: 70px;
+    width: 140px;
+    border-radius: 0px 0px 120px 120px;
+    position: relative;
+    left: 15px;
+}
